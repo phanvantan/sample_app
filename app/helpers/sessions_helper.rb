@@ -1,5 +1,4 @@
 module SessionsHelper
-
   def log_in user
     session[:user_id] = user.id
   end
@@ -33,8 +32,8 @@ module SessionsHelper
         remember user
       else forget user
       end
-    redirect_back_or user
     end
+    redirect_back_or user
   end
 
   def logged_in?

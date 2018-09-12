@@ -1,13 +1,19 @@
 en:
   password_reset: "Password reset"
   account_activation: "Account activation"
+  password_reset: "Password reset"
   controllres:
     users_controller:
       user_is_not_found: "User is not found"
       welcome: "Welcome to the Sample App!"
+    application:
+      please_login: "Please log in."
   mailers:
     user:
       account_activation: "Account activation"
+  models:
+    micropost:
+      less_than: "should be less than 5MB"
   base_title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
   ruby_on_rail_tutorial: "Ruby on Rails Tutorial"
@@ -53,10 +59,18 @@ en:
       errors:
         one: "1 error"
         other: "%{count} errors"
+    user_info:
+      micropost:
+        one: "0 microposts"
+        other: "%{count} microposts"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
   static_pages:
     root: "Root"
     str_root: "This is the home page for the %{link} sample application."
     home:
+      feed: "Micropost Feed"
       link_rails: "http://www.railstutorial.org/"
       welcome: "Welcome to the Sample App"
       str_home: "This is the home page for the %{link} sample application."
@@ -91,6 +105,7 @@ en:
       create_my_account: "Create my account"
     show:
       user_is_not_found: "User is not found."
+      microposts: "Microposts "
     create:
       check_mail: "Please check your email to activate your account."
       welcome: "Welcome to Sample app"
@@ -144,3 +159,13 @@ en:
       reseted: "Password has been reset."
     check_expiration:
       expired: "Password reset has expired."
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: "ago."
+      you_sure: "You sure?"
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+      not_delete: "Can't delete"
