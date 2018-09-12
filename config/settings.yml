@@ -5,3 +5,6 @@ user:
     maximum: 255
   pass:
     minimum: 6
+helper:
+  session:
+    one: "1"

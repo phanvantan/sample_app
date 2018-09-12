@@ -1,6 +1,6 @@
 <% provide(:title, t("help")) %>
 <h1><%= t("help") %></h1>
 <p>
-  <%= t("str_help", link1: link_to(t("rail_help"), t("link_help")),
-    link2: link_to(t("ruby_on_rail_help"), t("link_book"))).html_safe %>
+  <%= raw t("str_help", link1: link_to(t("rail_help"), t("link_help")),
+    link2: link_to(t("ruby_on_rail_help"), t("link_book"))) %>
 </p>

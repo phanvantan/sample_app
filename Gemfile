@@ -3,6 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.1"
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
+gem "config"
+gem "jquery-rails"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.1"
 gem "rubocop", "~> 0.54.0", require: false
@@ -12,17 +14,15 @@ gem 'puma', '~> 3.11'
 gem "sass-rails", "~> 5.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-
+# See https://github.com/rails/execjs#readme
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
-# Turbolinks makes navigating your web application faster.
+# Turbolinks makes navigating your web
 gem "turbolinks", "~> 5"
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Build JSON APIs with ease. Read more:
 gem "jbuilder", "~> 2.5"
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+# Use Redis adapter to run Action Cable
+# gem "redis", "~> 4.0"
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
 
@@ -36,7 +36,7 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to s
+  # Call "byebug" anywhere in the code to s
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "sqlite3"
 end
@@ -53,6 +53,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 2.15"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
   # Easy installation and use of chromedriver to run system
   gem "chromedriver-helper"

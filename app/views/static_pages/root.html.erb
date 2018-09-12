@@ -1,5 +1,5 @@
 <% provide(:title, t("root")) %>
 <h1><%= t("sample_app") %></h1>
 <p>
-  <%= t("str_root", link: link_to(t("link_rails_tutorial"), t("ruby_on_rail_tutorial"))).html_safe %>
+  <%= raw t("str_root", link: link_to(t("link_rails_tutorial"), t("ruby_on_rail_tutorial"))) %>
 </p>
