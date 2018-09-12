@@ -8,7 +8,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-   length: {minimum: Settings.user.pass.minimum}
+   length: {minimum: Settings.user.pass.minimum}, allow_nil: true
   has_secure_password
   before_save{email.downcase!}
 
@@ -36,9 +36,7 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
-  # Forgets a user.
   def forget
     update_attribute(:remember_digest, nil)
   end
-
 end

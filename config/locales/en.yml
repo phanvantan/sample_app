@@ -72,16 +72,33 @@ en:
       link_help: "http://www.railstutorial.org/help"
       link_book: "http://www.railstutorial.org/book"
   users:
+    name: "Name"
+    email: "Email"
+    password: "password"
+    password_confirmation: "Password_confirmation"
+    confirmation: "Confirmation"
     new:
-      name: "Name"
-      email: "Email"
-      password: "password"
-      password_confirmation: "Password_confirmation"
       signup: "Sign up"
       this_will: "This will be a signup page for new users"
-      confirmation: "Confirmation"
       create_my_account: "Create my account"
     show:
       user_is_not_found: "User is not found."
     create:
       welcome: "Welcome to Sample app"
+    edit:
+      edit_user: "Edit user"
+      update: "Update your profile"
+      save: "Save changes"
+      change: "change"
+      please: "Please log in."
+    update:
+      update_success: "Profile updated"
+    index:
+      please: "Please log in."
+      all_users: "All users"
+    user:
+      delete: "delete"
+      sure: "You sure?"
+    destroy:
+      user_destroy: "User deleted"
+      not_destroy: "Can't destroy, please again"
