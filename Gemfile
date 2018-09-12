@@ -15,7 +15,7 @@ gem "rails-i18n", "~> 5.1"
 gem "rubocop", "~> 0.54.0", require: false
 gem "will_paginate", "3.1.6"
 gem "sass-rails", "~> 5.0"
-# Use Uglifier as compressor for JavaScript assets
+# Use Uglifier as compressor for JavaScript
 gem "uglifier", ">= 1.3.0"
 # See https://github.com/rails/execjs#readme
 # Use CoffeeScript for .coffee assets and views

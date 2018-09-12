@@ -1,0 +1,15 @@
+one:
+  follower: phanvantan
+  followed: lana
+
+two:
+  follower: phanvantan
+  followed: malory
+
+three:
+  follower: lana
+  followed: phanvantan
+
+four:
+  follower: archer
+  followed: phanvantan
