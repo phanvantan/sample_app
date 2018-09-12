@@ -11,10 +11,15 @@ en:
   help: "Help"
   contact: "Contact"
   about: "About"
-  login: "Login"
   link_rails_tutorial: "http://www.railstutorial.org/"
   link_michael: "http://www.michaelhartl.com/"
   link_rails: "http://rubyonrails.org/"
+  shared:
+    error_messages:
+      the_form: "The form contains "
+      errors:
+        one: "1 error"
+        other: "%{count} errors"
   layouts:
     footer:
       news: "News"
@@ -67,16 +72,16 @@ en:
       link_help: "http://www.railstutorial.org/help"
       link_book: "http://www.railstutorial.org/book"
   users:
+    create:
+      welcome: "Welcome to the Sample App"
+    show:
+      user_not_found: "User not found"
     new:
       name: "Name"
       email: "Email"
-      password: "password"
+      password: "Password"
       password_confirmation: "Password_confirmation"
+      confirmation: "Confirmation"
+      create: "Create my account"
       signup: "Sign up"
       this_will: "This will be a signup page for new users"
-      confirmation: "Confirmation"
-      create_my_account: "Create my account"
-    show:
-      user_is_not_found: "User is not found."
-    create:
-      welcome: "Welcome to Sample app"
