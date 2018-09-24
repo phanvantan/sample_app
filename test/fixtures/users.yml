@@ -1,4 +1,1 @@
-phanvantan:
-  name: phanvantan
-  email: ptan94qn@gmail.com
-  password_digest: <%= User.digest('password') %>
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
