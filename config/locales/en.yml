@@ -1,4 +1,7 @@
 en:
+  controllres:
+    users_controller:
+      welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
   ruby_on_rail_tutorial: "Ruby on Rails Tutorial"
@@ -8,47 +11,72 @@ en:
   help: "Help"
   contact: "Contact"
   about: "About"
-  signup: "Sign up"
+  login: "Login"
   link_rails_tutorial: "http://www.railstutorial.org/"
   link_michael: "http://www.michaelhartl.com/"
   link_rails: "http://rubyonrails.org/"
   layouts:
-      footer:
-        news: "News"
-        link_new: "http://news.railstutorial.org/"
-        str_footer: "The %{link1} by %{link2}"
-      header:
-        sample_app: "sample app"
-        login: "Log in"
+    footer:
+      news: "News"
+      link_new: "http://news.railstutorial.org/"
+      str_footer: "The %{link1} by %{link2}"
+    header:
+      sample_app: "sample app"
+      login: "Log in"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+  sessions:
+    create:
+      invalid_sessions:  "Invalid email/password combination"
+    new:
+      combination: "Invalid email/password combination"
+      new_user: "New user? "
+      signup_now: "Sign up now!"
+  shared:
+    error_messages:
+      the_form: "The form contains "
+      errors:
+        one: "1 error"
+        other: "%{count} errors"
   static_pages:
-      root: "Root"
-      str_root: "This is the home page for the %{link} sample application."
-      home:
-        link_rails: "http://www.railstutorial.org/"
-        welcome: "Welcome to the Sample App"
-        str_home: "This is the home page for the %{link} sample application."
-
-      about:
-        link_book: "http://www.railstutorial.org/book"
-        link_screen: "http://screencasts.railstutorial.org"
-        screencast_series: "screencast series"
-        ruby_on_rails: "Ruby on Rails"
-        book: "book"
-        str_about: "The %{link1} is a %{link2} And %{link3} to teach web
-        development with %{link4}. This is Sample application for the tutorial."
-
-      contact:
-        str_contact: "Contact the Ruby on Rails Tutorial about the sample app at %{link}. "
-        contact_page: "contact page"
-        link_contact: "http://www.railstutorial.org/contact"
-
-      help:
-        str_help: "Get help on the Ruby on Rails Tutorial at the %{link1}
-        To get help on this sample app, see the %{link2}."
-        rail_help: "Rails Tutorial help section"
-        ruby_on_rail_help: "Ruby on Rails Tutoria book"
-        link_help: "http://www.railstutorial.org/help"
-        link_book: "http://www.railstutorial.org/book"
+    root: "Root"
+    str_root: "This is the home page for the %{link} sample application."
+    home:
+      link_rails: "http://www.railstutorial.org/"
+      welcome: "Welcome to the Sample App"
+      str_home: "This is the home page for the %{link} sample application."
+    about:
+      link_book: "http://www.railstutorial.org/book"
+      link_screen: "http://screencasts.railstutorial.org"
+      screencast_series: "screencast series"
+      ruby_on_rails: "Ruby on Rails"
+      book: "book"
+      str_about: "The %{link1} is a %{link2} And %{link3} to teach web
+      development with %{link4}. This is Sample application for the tutorial."
+    contact:
+      str_contact: "Contact the Ruby on Rails Tutorial about the sample app at %{link}. "
+      contact_page: "contact page"
+      link_contact: "http://www.railstutorial.org/contact"
+    help:
+      str_help: "Get help on the Ruby on Rails Tutorial at the %{link1}
+      To get help on this sample app, see the %{link2}."
+      rail_help: "Rails Tutorial help section"
+      ruby_on_rail_help: "Ruby on Rails Tutoria book"
+      link_help: "http://www.railstutorial.org/help"
+      link_book: "http://www.railstutorial.org/book"
   users:
-      new:
-        this_signup: "This will be a signup page for new users."
+    new:
+      name: "Name"
+      email: "Email"
+      password: "password"
+      password_confirmation: "Password_confirmation"
+      signup: "Sign up"
+      this_will: "This will be a signup page for new users"
+      confirmation: "Confirmation"
+      create_my_account: "Create my account"
+    show:
+      user_is_not_found: "User is not found."
+    create:
+      welcome: "Welcome to Sample app"
