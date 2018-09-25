@@ -1,4 +1,7 @@
 en:
+  controllres:
+    users_controller:
+      welcome: "Welcome to the Sample App!"
   base_title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
   ruby_on_rail_tutorial: "Ruby on Rails Tutorial"
@@ -6,7 +9,7 @@ en:
   help: "Help"
   contact: "Contact"
   about: "About"
-  root: "Root"
+  login: "Login"
   link_rails_tutorial: "http://www.railstutorial.org/"
   link_rails: "http://rubyonrails.org/"
   shared:
@@ -31,6 +34,8 @@ en:
     create:
       invalid_sessions:  "Invalid email/password combination"
     new:
+      remember_me: "Remember me"
+      remember_password: "Remember me on this computer"
       combination: "Invalid email/password combination"
       new_user: "New user? "
       signup_now: "Sign up now!"
@@ -67,6 +72,16 @@ en:
       link_help: "http://www.railstutorial.org/help"
       link_book: "http://www.railstutorial.org/book"
   users:
-      new:
-        signup: "Sign up"
-        this_will: "This will be a signup page for new users"
+    new:
+      name: "Name"
+      email: "Email"
+      password: "password"
+      password_confirmation: "Password_confirmation"
+      signup: "Sign up"
+      this_will: "This will be a signup page for new users"
+      confirmation: "Confirmation"
+      create_my_account: "Create my account"
+    show:
+      user_is_not_found: "User is not found."
+    create:
+      welcome: "Welcome to Sample app"
