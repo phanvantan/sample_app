@@ -1,7 +1,11 @@
 en:
+  account_activation: "Account activation"
   controllres:
     users_controller:
       welcome: "Welcome to the Sample App!"
+  mailers:
+    user:
+      account_activation: "Account activation"
   base_title: "Ruby on Rails Tutorial Sample App"
   hello: "Hello world"
   ruby_on_rail_tutorial: "Ruby on Rails Tutorial"
@@ -32,6 +36,7 @@ en:
       logout: "Log out"
   sessions:
     create:
+      message: "Account not activated. Check your email for the activation link."
       invalid_sessions:  "Invalid email/password combination"
     new:
       remember_me: "Remember me"
@@ -84,6 +89,7 @@ en:
     show:
       user_is_not_found: "User is not found."
     create:
+      check_mail: "Please check your email to activate your account."
       welcome: "Welcome to Sample app"
     edit:
       edit_user: "Edit user"
@@ -102,3 +108,13 @@ en:
     destroy:
       user_destroy: "User deleted"
       not_destroy: "Can't destroy, please again"
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi "
+      welcome_account: "Welcome to the Sample App! Click on the link below to activate
+        your account:"
+      activate: "Activate"
+  account_activations:
+    activated: "Account activated!"
+    invalid: "Invalid activation link"

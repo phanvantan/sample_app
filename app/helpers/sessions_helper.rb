@@ -19,7 +19,7 @@ module SessionsHelper
       @current_user ||= User.find_by(id: user_id)
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by(id: user_id)
-      if user&.authenticated?(cookies[:remember_token])
+      if user&.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -27,13 +27,14 @@ module SessionsHelper
   end
 
   def create_sp user
-    log_in user
-    if params[:session][:remember_me] == Settings.helper.session.one
-      remember user
-    else
-      forget user
+    if user.activated?
+      log_in user
+      if params[:session][:remember_me] == Settings.helper.session.one
+        remember user
+      else forget user
+      end
+      redirect_back_or user
     end
-    redirect_back_or user
   end
 
   def logged_in?
@@ -54,7 +55,7 @@ module SessionsHelper
 
   def redirect_back_or default
     redirect_to(session[:forwarding_url] || default)
-    session.delete :forwarding_url
+    session.delete(:forwarding_url)
   end
 
   def store_location
