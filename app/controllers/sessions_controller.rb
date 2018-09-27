@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       create_sp user
     else
-      flash.now[:danger] = t ".invalid_sessions"
+      flash.now[:danger] = t(".invalid_sessions")
       render :new
     end
   end
