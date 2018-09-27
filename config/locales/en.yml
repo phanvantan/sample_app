@@ -1,13 +1,19 @@
 en:
-  password_reset: "Password reset"
   account_activation: "Account activation"
   password_reset: "Password reset"
   controllres:
     users_controller:
       user_is_not_found: "User is not found"
       welcome: "Welcome to the Sample App!"
+      user_is_not_found: "User is not found"
+      following: "Following"
+      followers: "Followers"
     application:
       please_login: "Please log in."
+    relationship:
+      user_is_not_found: "User is not found."
+  following: "following"
+  followers: "followers"
   mailers:
     user:
       account_activation: "Account activation"
@@ -126,6 +132,12 @@ en:
     destroy:
       user_destroy: "User deleted"
       can_not: "Can't destroy, please check"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts:"
   user_mailer:
     account_activation:
       sample_app: "Sample App"
