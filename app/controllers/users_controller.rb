@@ -2,21 +2,9 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
-  before_action :load_user, only: [:show, :edit, :update, :destroy]
+  before_action :load_user, only: [:show, :edit, :update, :destroy, :correct_user]
 
-  def load_user
-    @user = User.find_by id: params[:id]
-  end
-
-  def show
-    return if @user
-    flash[:danger] = t ".user_is_not_found"
-    redirect_to signup_path
-  end
-
-  def index
-    @users = User.paginate page: params[:page]
-  end
+  def show; end
 
   def new
     @user = User.new
@@ -37,11 +25,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-    return if @user
-    flash[:danger] = t ".user_is_not_found"
-    redirect_to signup_path
-  end
+  def edit; end
 
   def update
     if @user.update_attributes(user_params)
@@ -55,14 +39,19 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t ".user_destroy"
-      redirect_to users_url
     else
-      flash[:danger] = t ".not_destroy"
-      redirect_to root_url
+      flash[:danger] = t ".can_not"
     end
+    redirect_to users_url
   end
 
   private
+    def load_user
+      @user = User.find_by id: params[:id]
+      return if @user
+      flash[:danger] = t ".user_is_not_found"
+      redirect_to signup_path
+    end
 
     def user_params
       params.require(:user).permit :name, :email, :password,
@@ -77,7 +66,7 @@ class UsersController < ApplicationController
     end
 
     def correct_user
-      @user = load_user
+      @user = User.find_by id: params[:id]
       redirect_to(root_url) unless current_user?(@user)
     end
 

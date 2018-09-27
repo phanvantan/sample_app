@@ -33,7 +33,7 @@ module SessionsHelper
         remember user
       else forget user
       end
-      redirect_back_or user
+    redirect_back_or user
     end
   end
 

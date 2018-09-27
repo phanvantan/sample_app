@@ -12,7 +12,6 @@ gem "rails", "~> 5.2.1"
 gem "rails-i18n", "~> 5.1"
 gem "rubocop", "~> 0.54.0", require: false
 gem "will_paginate", "3.1.6"
-# Use SCSS for stylesheets
 gem "sass-rails", "~> 5.0"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
